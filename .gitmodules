@@ -1,0 +1,3 @@
+[submodule "pyfiglet"]
+	path = pyfiglet
+	url = https://github.com/pwaller/pyfiglet.git
