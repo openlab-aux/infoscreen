@@ -113,14 +113,15 @@ class InfoScreen(object):
                 self.update_data()
                 self.drawscreen()
                 sleep(1)
+		
         except KeyboardInterrupt:
           self.main_quit()
     
     def main_quit(self):
         curses.nocbreak()
-        self.screen.keypad(0)
+        self.scr.keypad(0)
         curses.echo()
-        curses.endwin()
+	curses.endwin()
 
 
 infoscreen = InfoScreen()
